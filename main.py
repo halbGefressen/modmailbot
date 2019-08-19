@@ -4,8 +4,7 @@ import datetime
 
 import config
 
-token, mmchannelid = config.read_config()
-
+token, mmchannelname = config.read_config()
 
 class Bot(commands.Bot):
 
@@ -20,7 +19,8 @@ class Bot(commands.Bot):
             self.add_to_embedlist(msg.author, msg.created_at, msg.content)
             await msg.channel.send("Your request has been received")
 
-        await bot.process_commands(msg)
+        if (msg.channel.type == discord.ChannelType.text) and (msg.channel.name == mmchannelname):
+            await bot.process_commands(msg)
 
     
     # Add a message to the embed list.
