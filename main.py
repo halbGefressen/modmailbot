@@ -1,5 +1,5 @@
-mmchannelid = 612819612727246860
-token = "NjEwNTEwMjc5MjI2Mjk0Mjc1.XVn6fg.ha9wR2pJ_FRnYIMi4B7u4rurpbI"
+mmchannelid = 0
+token = "no u"
 
 
 import discord
