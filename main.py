@@ -1,10 +1,10 @@
-mmchannelid = 0
-token = "no u"
-
-
 import discord
 from discord.ext import commands
 import datetime
+
+import config
+
+token, mmchannelid = config.read_config()
 
 
 class Bot(commands.Bot):
