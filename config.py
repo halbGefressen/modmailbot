@@ -18,5 +18,5 @@ def read_config():
     parser.read("config.cfg")
     return parser["Settings"]["Token"], parser["Settings"]["DefaultChannel"]
 
-if __name__ == __main__: 
+if __name__ == "__main__": 
     create_config()
